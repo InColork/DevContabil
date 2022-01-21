@@ -1,0 +1,98 @@
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Contábil</title>
+</head>
+<body>
+<div class="pagina-superior">
+    <div class="barra-superior">
+   <h2 class="titulo-superior">Dev Contábil</h1>
+     <a href="#titulo-inferior" class="link-superior">Quem Somos</a>
+     <a href="#titulo-meio" class="link-superior">Serviços</a>
+     <a class="link-superior" onclick="chamar()">Contato</a>
+    </div>
+   <h1>Dev Contábil</h1>
+   <form id="formulario-contato" action="https://formsubmit.co/joaovitorbrehmer@email.com" method="POST">
+  <h3 class="titulo-formulario">Entre em contato</h3>
+<label>
+    Nome
+    <input type="text" name="nome" placeholder="Digite seu Nome" required/>
+</label>
+<label>
+    E-mail
+    <input type="email" name="email" placeholder="Digite o seu E-mail" required/>
+</label>
+<label>
+    WhatsApp
+    <input type="tel" name="telefone" placeholder="Digite o seu Número" required/>
+</label>
+<label>
+    Fale Conosco
+    <textarea name="info" placeholder="Qual Sua Dúvida?" required></textarea>
+</label>
+  <button>Enviar</button>
+</form>
+</div>
+<h2 id="titulo-meio">Nossos Serviços</h2>
+<div class="centro">
+<div class="card">
+    <h3 class="titulo-card">Contabilidade Completa</h3>
+    <ul>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+    </ul>
+</div>
+<div class="card">
+    <h3 class="titulo-card">Cuidamos do seu Negocio</h3>
+    <ul>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+    </ul>
+</div>
+<div class="card">
+    <h3 class="titulo-card">Cuidamos de Você</h3>
+    <ul>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+        <li>Imposto de Renda</li>
+    </ul>
+</div>
+</div>
+<div class="inferior">
+    <h2 id="titulo-inferior">Sobre Nôs</h2>
+    <p class="paragrafo-inferior">Estamos presente no mercado há mais de 4 décadas auxiliando nossos clientes nacionais e internacionais que já atuam ou desejam abrir seus negócios e ingressar no Brasil.
+
+        Assessoramos investidores que queiram prospectar seus negócios no Brasil e investidores (“brasileiros”) interessados em fazer negócios em outros países.
+        Oferecemos “backoffice” nas áreas Financeira, Recursos Humanos, Tributária e Contabilidade, inclusive a abertura, legalização e regularização de empresas e negócios.
+        
+        Com pesquisas de mercado, montamos toda estrutura organizacional, ambiente operacional e logística de suas atividades, com profissionais qualificados, competentes e continuamente treinados.
+        
+        Somos especialistas em empresas tributadas pelo LUCRO REAL e Contabilidade em IFRS. Assim, o Planejamento das Operações e suas consequências tributárias passam a ser condições de competitividade, inclusive sugerindo incorporação ou desmembramento de atividades.
+
+    </p>
+</div>
+</body>
+<script>
+let formulario = document.getElementById("formulario-contato")
+
+function chamar(){
+formulario.className = "mostrar-formulario"
+}
+
+</script>
+
+</html>
